@@ -1,0 +1,40 @@
+// Resets
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+
+    background-color: #FFFDFC;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul {
+    list-style: none;
+}
+
+p,
+article {
+    word-break: break-word;
+    hyphens: auto;
+}

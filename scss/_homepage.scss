@@ -1,0 +1,488 @@
+//Navigation
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #222222;
+
+
+    &-log {
+        width: 10rem;
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+
+
+        &--item {}
+    }
+}
+
+// Hero Banner
+
+.heroBanner {
+    width: 100%;
+    min-height: 80vh;
+    padding: 5vw;
+    padding-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-position: bottom;
+    background-image: url("Assets/SVG/Group\ 94.svg");
+
+
+
+    &-arrowLeft {
+        width: 5%;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+
+        &:focus {
+            outline: none;
+        }
+
+        img {
+            width: 5rem;
+        }
+    }
+
+    &-arrowRight {
+        width: 5%;
+    }
+
+    &-content {
+        width: 35%;
+
+        h1 {
+            font-size: 3.6rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 1.6rem;
+        }
+
+        p {
+            margin-bottom: 3.2rem;
+        }
+
+    }
+
+    &-image {
+        width: 45%;
+
+
+        // margin-bottom: -20rem;
+
+        .turtle {
+            margin-bottom: -15rem;
+        }
+
+        .bubble-1 {
+            position: absolute;
+            top: -100px !important;
+            left: 80% !important;
+
+        }
+
+        .bubble-2 {
+            position: absolute;
+            top: 0 !important;
+            left: calc(100% - 100px) !important;
+        }
+
+        .bubble-3 {
+            position: absolute;
+            top: 0 !important;
+            left: calc(100% + 100px) !important;
+
+        }
+
+        .bubble-4 {
+            position: absolute;
+            top: 100% !important;
+            left: 100% !important;
+        }
+
+        .wave-1 {
+            position: absolute;
+            top: 50% !important;
+            left: calc(100% + 100px) !important;
+
+        }
+
+        .wave-2 {
+            position: absolute;
+            top: calc(50% + 50px) !important;
+            left: calc(100% + 100px) !important;
+
+        }
+    }
+}
+
+// About Section
+
+.about {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+
+    &-content {
+        width: 50%;
+        padding-left: 5vw;
+        align-self: flex-end;
+
+        &--desc {
+            margin-bottom: 2.4rem;
+        }
+
+        &--icons {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+    }
+
+    &-image {
+        width: 50%;
+        display: flex;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            z-index: 10;
+            top: 2.5vw;
+            left: 0;
+            font-size: 3.6rem;
+            font-weight: 700;
+
+            span {
+                font-family: 'Larianti',
+                    sans-serif;
+                font-weight: 400;
+                font-size: 2.6rem;
+            }
+        }
+
+        img {
+            width: calc(100% - 10vw);
+            margin-left: auto;
+        }
+    }
+
+}
+
+.icons-container {
+    padding: 3.2rem;
+    background-color: #FCF2F4;
+    border-radius: 1.6rem;
+    margin-bottom: 2.4rem;
+
+
+    &>div {
+        width: 8rem;
+        height: 8rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        border-radius: 50%;
+        margin-bottom: 0.8rem;
+
+        img {
+            width: 50%;
+        }
+
+
+
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.icon-container-blue {
+    background-color: #F0F3F7;
+}
+
+// Services Section
+
+.services {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: -5vw;
+        width: 25%;
+        height: 100vh;
+        background-color: #FCF2F4;
+        z-index: -1;
+    }
+
+    &-content {
+        width: 50%;
+        padding-right: 5vw;
+    }
+
+    &-image {
+        width: 50%;
+        display: flex;
+        position: relative;
+
+
+        a {
+            position: absolute;
+            z-index: 10;
+            bottom: 2.5vw;
+            right: 0;
+            font-size: 3.6rem;
+            font-weight: 700;
+            transition: 100ms ease;
+
+
+            &:hover {
+                color: #F78AB8;
+            }
+
+        }
+
+        img {
+            width: calc(100% - 10vw);
+
+        }
+
+    }
+}
+
+// Certification Section
+
+.cert {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-content {
+        width: 60%;
+    }
+
+    &-logos {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 5vw;
+
+        img {
+            height: 5rem;
+        }
+    }
+
+}
+
+// Initiative Section
+
+.initiative {
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-content {
+        width: 60%;
+        padding-right: 5vw;
+
+        a {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
+
+    &-image {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5vw;
+            right: -5vw;
+            background-color: #E9F1F5;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+
+.avantiWay {
+    width: 100%;
+    padding: 7.5vw 5vw;
+    background-color: #93C69E;
+    color: white;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 10vw;
+        left: 0;
+        width: 100%;
+        height: 12rem;
+        background-image: url("Assets/heart_element.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    &-content {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+
+        h2 {
+            font-family: 'Larianti',
+                sans-serif;
+            font-weight: 400;
+            font-size: 2.4rem;
+            margin-bottom: 1.6rem;
+        }
+
+        h3 {
+            margin-bottom: 7.2rem;
+        }
+
+        p {
+            margin-bottom: 1.6rem;
+
+        }
+
+        a {
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 4.8rem;
+            position: relative;
+            z-index: 20;
+
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -1.6rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 120%;
+                height: 2px;
+                background-color: white;
+                transition: 200ms ease;
+                transform-origin: bottom;
+                z-index: 2;
+            }
+
+
+
+
+        }
+
+
+    }
+}
+
+// Footer
+
+.footer {
+    width: 100%;
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    background-color: white;
+    color: #989898;
+
+    &-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &--copy {
+            small {
+                display: block;
+            }
+        }
+    }
+
+    &-brands {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+            color: #989898;
+        }
+    }
+
+    &-quicklinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+            color: #989898;
+        }
+    }
+
+    &-products {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+            color: #989898;
+        }
+    }
+
+    &-contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+
+        h4 {
+            color: #989898;
+        }
+
+        &>* {
+            a {
+                display: block;
+            }
+        }
+    }
+}
